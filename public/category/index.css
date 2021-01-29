@@ -1,0 +1,136 @@
+/* 响应式布局中1px边框问题？伪元素定位加缩放来解决这个问题
+1px px:逻辑长度 设备像素比 
+*/
+/* 媒体查询 */
+
+
+iframe{width:100%; height:100%;}
+/*块元素的流体特性 继承父元素的宽度 高度不继承 */
+/*弹性容器：*/
+/* 弹性容器中有两条轴 */
+/* 主轴：弹性项目在弹性容器内会沿主轴摆放 主轴默认是横向的 从左到右 交叉轴：永远和主轴垂直*/
+/* 对元素设置了弹性盒 父元素:弹性容器 只负责影响子元素 子元素下的不会影响 子元素：弹性项目*/
+.page-container{
+	height: 100%;
+	/* 控制主轴方向 */
+	flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+}
+/* vw:的计算 */
+.page-header{
+	flex-shrink: 0;
+	height:12vw;
+	padding:2vw 5vw;
+	box-sizing: border-box;
+}
+.page-header div{
+	width:90%;
+	height:57%;
+	padding:1.5vw 4vw;
+	background:#EFEFEF;
+	border-radius: 6vw;
+	text-align: right;
+}
+.icon-find{
+	line-height:20px;
+}
+/* 既是弹性项目又是弹性容器 */
+.page-content{
+	/* 隐式高度约定 
+	 弹性项目：虽然没有显示高度，
+	 但是align-self表示在交叉轴方向(垂直方向)距离是参照(继承)弹性容器的align-self的取值
+	 相当于隐式的表达了我的限定高度*/
+	 /* 相当于这里有一个align-self: inherit; inherit:继承的*/
+	 /*当超出这个高度的时候 让超出的内容隐藏掉 这样就不会让页脚挤到项目去  */
+	height: 100%;
+	overflow: hidden;
+	flex-grow: 1;
+	border-top: 1px solid #EFEFEF;
+	border-bottom: 1px solid #efefef;
+	display: flex;
+	justify-content: space-between;
+}
+/* 子元素的高度是父元素高度的原因 align-items:streth；交叉轴的默认是stretch拉升
+	 在子元素不设置高度的时候 会默认拉升到父元素的高度*/
+/*在给子元素添加滚动条的时候父元素必须显示或者隐式的设置一个高度*/
+.page-content_left{
+	flex-shrink:0;
+	width: 26.666666vw;
+	overflow: auto;
+}
+/* 左边样式 */
+ul.list-main{height:100%;}
+ul.list-main li{
+	height:8.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul.list-main span{
+	display: inline-block;
+	height:30px;
+	padding:0vw 2.666666vw;
+	line-height:30px;
+	font-size:14px;
+	border-radius:12px;
+}
+ul.list-main li.active span{
+	background:rgb(226,30,21);
+	color: #fff;
+}
+.page-content_right{
+	flex-grow: 1;
+	border-left: 1px solid #EFEFEF;
+	overflow: auto;
+	padding: 1.333333vw;
+	background: #EFEFEF;
+}
+/* 右边样式 */
+ul.list-sub,p.empty{display: none;}
+ul.list-sub.show,p.empty.show{display: block;}
+img.avatar{
+	width:100%;
+	height:26.666666vw;
+	border-radius: 13px;
+}
+ul.list-sub{
+	height:100%; 
+	background: #fff; 
+	border-radius:10px; 
+	margin-top: 10px;
+}
+ul.list-sub li{
+	float: left;
+	width: 33.333333%;
+	height:25%;
+}
+ul.list-sub a{
+	flex-direction:column;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+ul.list-sub img{
+	width:100%;
+}
+ul.list-sub span{
+	font-size:14px;
+	color:#666;
+	margin-top:10px;
+}
+p.empty{
+	margin-top:10px;
+	font-size: 14px;
+	color: #999;
+}
+
+/*  */
+.page-footer{
+	/* 不接受缩放 目的不被content挤压*/
+	/* 注：在有设置固定宽或者高的时候给元素设置缩放比为0 让元素的不被其他没有设置宽或者高的弹性项目挤压 */
+	flex-shrink: 0;
+	/* 页脚 ：设备宽一点 就把页脚变高一点  
+	在375的宽度下  显示50   50/375 = ？/100vw  除不尽保留六位小数 */
+	height:13.333333vw;
+}

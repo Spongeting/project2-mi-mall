@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/public/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+	</head>
+	<body>
+		<div class="page-order">
+			<div class="page-scroll hide-scroll">
+				<div class="page-header">
+					<div class="page-headers">
+						<i class="iconfont icon-back"></i>
+						<span>确认订单</span>
+					</div>
+					<div class="hideHeader" style="display: none;">
+						<i class="iconfont icon-back hide-back"></i>
+						<span>确认订单</span>
+					</div>
+				</div>
+				<div class="page-container">
+					<div class="page-containers">
+						<div class="address">
+							<div class="address-text"></div>
+							<i class="iconfont icon-back-right"></i>
+						</div>
+						<div class="product">
+							<div class="product-title">
+								<img src="./img/logo.png" />
+								<span>小米自营</span>
+							</div>
+							<ul class="product-commodity">
+								<!-- js中 -->
+							</ul>
+							<div class="invoice">
+								<p>
+									<span>发票类型</span>
+									<span>个人电子发票</span>
+								</p>
+								<p>
+									<span>买家留言</span>
+									<input type="text" placeholder="填写内容需要与商家协商并确认,45字以内"/>
+								</p>
+							</div>
+						</div>
+						<div class="discount">
+							<ul class="discount-content">
+								<li>
+									<span>商品金额</span>
+									<span class="discount-content_totalMoney">￥</span>
+								</li>
+								<li>
+									<span>活动优惠</span>
+									<span>暂无优惠</span>
+								</li>
+								<li>
+									<span>优惠券</span>
+									<span>暂无可用</span>
+								</li>
+								<li>
+									<span>运费</span>
+									<span>+￥0.00</span>
+								</li>
+								<li>
+									<span>配送方式</span>
+									<span>快递配送</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-footer">
+				<div class="footer-total">
+					<span>合计:</span>
+					<span>￥</span>
+					<span class="total-money"></span>
+					<span>免运费</span>
+				</div>
+				<div class="confirmOrder">提交订单</div>
+			</div>
+			<!-- 弹层 -->
+			<div class="hide-pop"></div>
+			<div class="hide-smPop" style="display: none;">
+				<div class="hide-smPop_header">
+					<img src="/details/img/close.png" />
+					<span>选择地址</span>
+				</div>
+				<ul class="hide-smPop_content hide-scroll">
+					<!-- js中 -->
+				</ul>
+				<div class="hide-smPop_footer">
+					+ &nbsp;&nbsp;添加地址
+				</div>
+			</div>
+		</div>
+		
+		<script src="/public/js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/js/jQuery-extend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

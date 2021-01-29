@@ -1,0 +1,77 @@
+.page-register{
+	height:100%;
+	background:url('img/bg.png');
+	background-size:cover;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+.page-register h1{
+	flex-shrink: 0;
+	padding-top:80px;
+	box-sizing:border-box;
+	font-weight: 500;
+	font-size:24px;
+	color:#666;
+}
+.register-container{
+	flex-grow: 1;
+	width:100%;
+	padding:20vw 5vw 0vw;
+	box-sizing: border-box;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.username,.number,.password,.password1{
+	width:100%;
+	border-bottom:1px solid #EFEFEF;
+	text-align: center;
+	padding:20px 0vw;
+	box-sizing: border-box;
+}
+.username input,.number input{
+	width:65%;
+	font-size:18px;
+	border:none;
+	outline: none;
+}
+.pass{
+	width:100%;
+}
+.register{
+	text-align: center;
+	width: 50%;
+	color:#fff;
+	font-size:16px;
+	font-weight:600;
+	margin:12vw 0vw;
+	padding:15px 10px;
+	border-radius: 6vw;
+	box-shadow:0px 4px 2px #f1eadf;
+	background: linear-gradient(to right, #E4BB7E, #D1A96E );
+}
+.username,.number{
+	display:flex;
+}
+.tipspan{
+	font-size:15px;
+}
+.user{
+	width:100%;
+}
+.password,.password1{
+	display: flex;
+}
+.password input{
+	width:65%;
+	font-size:18px;
+	border:none;
+	outline: none;
+}
+.password1 input{
+	width:65%;
+	font-size:18px;
+	border:none;
+	outline: none;
+}

@@ -1,0 +1,52 @@
+
+/* 菜单 粒度：细化程度*/
+ul.mi-nav{
+	height:100%;
+}
+ul.mi-nav li {
+	float:left;
+	width:20%;
+	height:100%;
+}
+ul.mi-nav a {
+	flex-direction: column;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:100%;
+	
+}
+/* nth:一般用在亲兄弟之间 而且中间不掺杂任何其他元素的情况下 */
+ul.mi-nav i {
+	width:24px;
+	height:24px;
+	background-image: url('nav_bg.png');
+	/* 维持图片原始宽高比的情况下 将图片短的一边进行缩放，适应盒子 缩小到和盒子一样宽高 */
+	background-size: cover;
+	/* 盒子和图片的比例是1:10 可以写成100% */
+	/* background-size: 100% 1000%; */
+	/* 注意：居中的话background-position：50% 50%  容器-图片的宽高=剩余留白空间 50% 50%正好是一半 center center也是一样的*/
+}
+/* 背景位置百分比写法:容器的宽或者高-图片的宽或者高的差*/
+/* 假设容器的高度是10  图片的高度是100 差-90  
+ -90 * ？% = -10  如果除不尽 保留小数点后六位*/
+ul.mi-nav li:nth-child(1) i {background-position:0 0;}
+ul.mi-nav li:nth-child(2) i {background-position:0 22.222222%;}
+ul.mi-nav li:nth-child(3) i {background-position:0 44.444444%;}
+ul.mi-nav li:nth-child(4) i {background-position:0 66.666666%;}
+ul.mi-nav li:nth-child(5) i {background-position:0 88.888888%;}
+
+ul.mi-nav li:nth-child(1).active i {background-position:0 11.111111%;}
+ul.mi-nav li:nth-child(2).active i {background-position:0 33.333333%;}
+ul.mi-nav li:nth-child(3).active i {background-position:0 55.555555%;}
+ul.mi-nav li:nth-child(4).active i {background-position:0 77.777777%;}
+ul.mi-nav li:nth-child(5).active i {background-position:0 100%;}
+ul.mi-nav span {
+	/* 注意谷歌浏览器字体默认最小是12px 在设置内自定义字体 设置字体的大小 */
+	font-size:10px;
+	color:#333;
+}
+/* 让代码去侦测网址 根据网址去激活*/
+/* profile:个人中心 taste：品味  cart：购物车*/
+/* 那个激活 菜单对应的哪一项就变颜色 有active值 设置好文件夹 将来的路径就摆好了*/

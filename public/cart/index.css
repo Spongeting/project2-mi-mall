@@ -1,0 +1,229 @@
+.page-cart{
+	overflow:hidden;
+	height: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
+.page-scroll{
+	width:100%;
+	overflow:auto;
+	flex-grow:1;
+	position: relative;
+	background:#EFEFEF;
+}
+.page-header{
+	width:100%;
+	height:48vw;
+	background:url('img/bg.png')no-repeat;
+	background-size: cover;
+}
+.page-headers{
+	width:100%;
+	padding:5.333333vw 7vw 0vw;
+	box-sizing: border-box;
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.icon-back{
+	color:#fff;
+	font-size:16px;
+}
+.page-headers span:nth-child(2){
+	color:#fff;
+	font-size:18px;
+	font-weight:bolder;
+}
+.headers-edit{
+	color:#fff;
+	font-size:14px;
+}
+/* 隐藏导航栏 */
+.hideHeader{
+	width:100%;
+	height:45px;
+	background-color: #fff;
+	position: fixed;
+	top:0;
+	padding:0vw 4vw;
+	box-sizing: border-box;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999;
+}
+.hide-back{
+	color:#333;
+	font-size:16px;
+}
+.page-container{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top:20vw;
+}
+.page-containers{
+	width:100%;
+	height:100%;
+}
+/* 没有商品的 */
+.default{
+	width:100%;
+	height:100%;
+	text-align: center;
+	background:#EFEFEF;
+	flex-direction: column;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+.default img{
+	width:144px;
+	height:144px;
+}
+.default span:nth-child(2){
+	padding: 10px 0px;
+	box-sizing:border-box;
+	color:rgb(102,102,102);
+	font-size: 16px;
+}
+.default span:nth-child(3){
+	border:1px solid #000;
+	padding:10px 20px;
+	background: #fff;
+	border:1px solid black;
+	border-radius: 6vw;
+	color:#333;
+	font-size:14px;
+}
+/* 有商品的 */
+.addProduct{
+	display: none;
+	width:94%;
+	margin:0 auto;
+	border-radius:6vw;
+	background-color:#fff;
+}
+.container-header{
+	padding:5.333333vw 2.666666vw 5.333333vw;
+	box-sizing: border-box;
+}
+.containerAll{
+	width:16px;
+	height:16px;
+	margin-right:5px;
+}
+.container-header span{
+	font-size:18px;
+	font-weight:500;
+	color:#666;
+}
+.container-list{
+	padding:5.333333vw 2.666666vw 5.333333vw;
+	box-sizing: border-box;
+}
+.container-list li{
+	padding-bottom:6vw;
+	box-sizing: border-box;
+	display:flex;
+	align-items: center;
+}
+.ischeck{
+	width:18px;
+	height:18px;
+	margin-right:10px;
+}
+.product{
+	width:100%;
+	display:flex;
+}
+.product img{
+	width:86px;
+	height:86px;
+	background:rgba(0,0,0,0.1);
+	border-radius:4px;
+}
+.product-text{
+	width:100%;
+	margin-left:10px;
+}
+.product-text1{
+	font-size:16px;
+	color:#333;
+	padding-bottom:4vw;
+}
+.product-text2{
+	display:flex;
+	justify-content:space-between;
+}
+.product-text2_price span:nth-child(1){
+	font-size:12px;
+	color:rgb(191, 17, 17);
+} 
+.product-text2_price span:nth-child(2){
+	font-size:20px;
+	color:rgb(191, 17, 17);
+}
+.product-text2_count{
+	color:#333;
+	display:flex;
+}
+.product-text2_count span{
+	text-align:center;
+	padding:0vw 2.666666vw;
+	box-sizing:border-box;
+}
+.product-text2_count span:nth-child(2){
+	background: #EFEFEF;
+	padding:0vw 2.666666vw;
+}
+/* 底部 */
+.page-footer{
+	width:100%;
+	flex-shrink:0;
+	height:14.666666vw;
+	padding:5.333333vw 5.333333vw;
+	box-sizing: border-box;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.checks{
+	flex-shrink: 0;
+	padding:2.333333vw 0vw;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.checkAll{
+	width:18px;
+	height:18px;
+}
+.checkSp{
+	padding-left:10px;
+	font-size:18px;
+}
+.remove,.settl{
+	padding:1.333333vw 6vw;
+	color:#fff;
+	border-radius: 6vw;
+	background: linear-gradient(to right, rgb(240, 78, 46), rgb(213, 16, 16));
+	font-size:16px;
+}
+/* 结算 */
+.Settlement{
+	display:flex;
+	align-items:center;
+}
+
+.total-symbol{
+	font-size:15px;
+	color:rgb(191, 17, 17);
+	font-weight:bolder;
+}
+.total-money{
+	font-size:18px;
+	color:rgb(191, 17, 17);
+	margin-right: 10px;
+}

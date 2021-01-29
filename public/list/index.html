@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/public/layer_mobile/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="page-list">
+			<div class="page-header">
+				<i class="iconfont icon-back"></i>
+				<div class="find">
+					<input type="text" class="find-Input"/>
+				</div>
+				<div class="icons-left">
+					<i class="iconfont icon-category"></i>
+					<i class="iconfont icon-listview" style="display: none;"></i>
+				</div>
+				<div class="find-bun">搜索</div>
+			</div>
+			<ul class="page-sort">
+				<li style="color: rgb(180,115,31);" class="ascs">
+					<i class="iconfont icon-sort-asc"></i>
+					<i class="iconfont icon-sort-desc" style="display: none;"></i>
+				</li>
+				<li class="prices">
+					<span>价格</span>
+				</li>
+				<li class="sales">
+					<span>销量</span>
+				</li>
+				<li class="rates">
+					<span>评价</span>
+				</li>
+			</ul>
+			<div class="page-container hide-scroll">
+				<ul class="column clearfix list"></ul>
+			</div>
+			<div class="goTop">
+				<i class="iconfont icon-cc-top"></i>
+			</div>
+		</div>
+		
+		<script src="/public/js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/layer_mobile/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../public/js/jQuery-extend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
+<!-- 在写一个页面的样式的时候要把页面写的足够灵活 -->

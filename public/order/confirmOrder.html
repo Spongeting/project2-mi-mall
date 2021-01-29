@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/public/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/layer_mobile/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="confirmOrder.css"/>
+	</head>
+	<body>
+		<div class="confirmOrder-page">
+			<div class="page-header">
+				<i class="iconfont icon-back"></i>
+				<span>有品收银台</span>
+			</div>
+			<div class="page-container">
+				<div class="page-container_money">
+					<div class="page-container_gold">
+						<span>￥</span>
+						<span class="container_golds"></span>
+						<span>.00</span>
+					</div>
+					<div class="page-container_time">
+						<span>支付剩余时间</span>
+						<!-- 倒计时 -->
+						<span class="Countdown">
+							<span>00:</span>
+							<span class="minute">29</span>:
+							<span class="second">59</span>
+						</span>
+					</div>
+				</div>
+				<ul class="page-container_Pay">
+					<li>
+						<img src="./img/pay.png" >
+						<div class="Alipay">
+							<div class="Alipay-text">
+								<span>支付宝</span>
+								<span>推荐</span>
+							</div>
+							<input type="radio" name="3" checked />
+						</div>
+					</li>
+					<li>
+						<img src="./img/pay1.png" >
+						<div class="mi-wallet">
+							<span>小米钱包</span>
+							<input type="radio" name="3" />
+						</div>
+					</li>
+					<li>
+						<img src="./img/pay2.png" >
+						<div class="mi-Staging">
+							<span>微信支付</span>
+							<input type="radio" name="3" />
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer">
+				<span class="footer-pay"></span>
+			</div>
+		</div>
+		
+		<script src="/public/js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/js/jQuery-extend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/layer_mobile/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="confirmOrder.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

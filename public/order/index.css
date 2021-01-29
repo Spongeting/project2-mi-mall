@@ -1,0 +1,353 @@
+.page-order{
+	overflow:hidden;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+}
+.page-scroll{
+	overflow:auto;
+	flex-grow: 1;
+	background: #EFEFEF;
+	position: relative;
+}
+/* 头部 */
+.page-header{
+	width:100%;
+	height:44vw;
+	background:url("../cart/img/bg.png")no-repeat;
+	background-size: cover;
+}
+.page-headers{
+	width:100%;
+	padding:10vw 2vw 0vw;
+	box-sizing: border-box;
+	display:flex;
+	align-items: center;
+}
+.icon-back{
+	flex-shrink: 0s;
+	color:#F1EADF;
+	font-size:20px;
+}
+.page-headers span:nth-child(2){
+	text-align: center;
+	flex-grow: 1;
+	color:#fff;
+	font-size:20px;
+	font-weight:bolder;
+}
+/* 隐藏导航栏 */
+.hideHeader{
+	position:fixed;
+	top:0;
+	z-index: 999;
+	width:100%;
+	background:rgba(255,255,255,0.6);
+	padding:3vw 2vw;
+	box-sizing: border-box;
+	display:flex;
+	align-items: center;
+}
+.hide-back{
+	color:#666;
+	font-size:20px;
+}
+.hideHeader span:nth-child(2){
+	text-align: center;
+	flex-grow: 1;
+	color:#999;
+	font-size:20px;
+	font-weight:bolder;
+}
+/* 主体 */
+.page-container{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top:20vw;
+	padding:3vw 3vw;
+	box-sizing: border-box;
+}
+.page-containers{
+	width:100%;
+	height:100%;
+}
+/* 地址 */
+.address{
+	padding:6vw 4vw;
+	box-sizing: border-box;
+	border-radius:4vw;
+	background:#fff;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.address-text p:nth-child(1){
+	padding-bottom:2.666666vw;
+}
+.address-text p:nth-child(1) span:nth-child(1){
+	font-size: 16px;
+	color:#000;
+	font-weight: bolder;
+	margin-left:5px;
+}
+.address-text p:nth-child(1) span:nth-child(2){
+	font-size: 16px;
+	color:#000;
+	font-weight: bolder;
+	margin-left:5px;
+}
+.address-text p:nth-child(2){
+	font-size:14px;
+	color:#666;
+}
+.icon-back-right{
+	color:#666;
+}
+/* 商品 */
+.product{
+	margin-top:2.666666vw;
+	padding:3vw 3vw;
+	box-sizing: border-box;
+	border-radius:4vw;
+	background:#fff;
+}
+.product-title{
+	display:flex;
+	align-items:center;
+	padding:2vw 0vw 4vw;
+	box-sizing:border-box;
+}
+.product-title img{
+	width:24px;
+	height:24px;
+	margin-right:1.333333vw;
+}
+.product-title span{
+	font-size:14px;
+	color:#333;
+	font-weight:bolder;
+}
+ul.product-commodity{
+	padding:2vw 0vw 4vw;
+	box-sizing:border-box;
+}
+ul.product-commodity li{
+	display:flex;
+}
+.product-commodity img{
+	width:23vw;
+	height:23vw;
+	background:#EEEEEE;
+	margin-right:2.666666vw;
+}
+.product-commodity_brief{
+	flex-grow: 1;
+}
+.product-commodity_brief p:nth-child(1){
+	font-size:15px;
+	color:#333;
+	padding:0vw 1vw 1.333333vw;
+	box-sizing:border-box;
+}
+.product-commodity_brief p:nth-child(2){
+	display:flex;
+	justify-content: space-between;
+	font-size:14px;
+	font-weight:700;
+	padding:0vw 1vw 1.333333vw;
+	box-sizing:border-box;
+}
+.commodity-Amount span:nth-child(1){
+	font-size:12px;
+	color:rgb(191, 17, 17);
+}
+.commodity-Amount span:nth-child(2){
+	font-size:18px;
+	font-weight: 500;
+	color:rgb(191, 17, 17);
+}
+.product-commodity_brief p:nth-child(3){
+	display:inline-block;
+	font-size:11px;
+	padding:2px 4px;
+	border-radius:6vw;
+	box-sizing: border-box;
+	background:rgb(255, 244, 244);
+	color: rgb(191, 17, 17);
+}
+.invoice{
+	padding-top:4vw;
+	box-sizing: border-box;
+}
+.invoice p:nth-child(1){
+	display:flex;
+	justify-content: space-between;
+	color:#333;
+	font-size:16px;
+	padding-bottom:3vw;
+	box-sizing: border-box;
+}
+.invoice p:nth-child(2){
+	padding:3vw 0vw;
+	color:#333;
+	font-size:16px;
+}
+.invoice p:nth-child(2) input{
+	width:75%;
+	border:none;
+	outline:none;
+	margin-right:5px;
+}
+/* 折扣 */
+.discount{
+	margin-top:2.666666vw;
+	padding:3vw 3vw;
+	box-sizing: border-box;
+	border-radius:4vw;
+	background:#fff;
+}
+.discount li{
+	display:flex;
+	justify-content: space-between;
+	padding:2vw 0vw;
+	box-sizing: border-box;
+	font-size:16px;
+	color:#333;
+}
+.discount li:nth-child(1) span:nth-child(2){
+	color:rgb(191, 17, 17);
+}
+.discount li:nth-child(4) span:nth-child(2){
+	color:rgb(191, 17, 17);
+}
+/* 尾部 */
+.page-footer{
+	height:14.666666vw;
+	flex-shrink:0;
+	padding:2.666666vw 5.333333vw;
+	box-sizing: border-box;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.footer-total span:nth-child(1){
+	font-size:15px;
+	color: #000;
+	font-weight:900;
+}
+.footer-total span:nth-child(2){
+	font-size:14px;
+	color:rgb(191, 17, 17);
+	font-weight:500;
+}
+.footer-total span:nth-child(3){
+	font-size:22px;
+	color:rgb(191, 17, 17);
+	font-weight:700;
+}
+.footer-total span:nth-child(4){
+	font-size:13px;
+	color:#000;
+	font-weight:500;
+}
+.page-footer div:nth-child(2){
+	padding:2.666666vw 5.333333vw;
+	box-sizing: border-box;
+	background:rgb(191, 17, 17);
+	color:#fff;
+	font-size:14px;
+	border-radius: 6vw;
+}
+/* 弹层 */
+.hide-pop{
+	display:none;
+	width:100%;
+	height:100%;
+	position:fixed;
+	bottom:0;
+	background: rgba(0,0,0,0.2);
+}
+.hide-smPop{
+	overflow: hidden;
+	width: 100%;
+	height:55%;
+	border-radius: 20px 20px 0 0;
+	position:fixed;
+	bottom:0;
+	background:#fff;
+	display:flex;
+	flex-direction: column;
+}
+.hide-smPop_header{
+	flex-shrink: 0;
+	padding:4vw 4vw;
+	box-sizing:border-box;
+	display:flex;
+	flex-direction: row-reverse;
+	align-items:center;
+}
+.hide-smPop_header img{
+	flex-shrink: 0;
+	width:6.8vw;
+	height:6.8vw;
+}
+.hide-smPop_header span{
+	flex-grow: 1;
+	text-align:center;
+	font-size:16px;
+	color: black;
+}
+ul.hide-smPop_content{
+	flex-grow: 1;
+	overflow:auto;
+}
+ul li.hide-smPop_contents{
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:4vw 4vw;
+	box-sizing: border-box;
+}
+li.hide-smPop_contents input{
+	flex-shrink: 0;
+	width:24px;
+	height:24px;
+}
+.smPop_contents_text{
+	flex-grow: 1;
+	padding:0 4vw;
+	box-sizing: border-box;
+}
+.smPop_contents_text p:nth-child(1){
+	padding:1vw 0vw;
+	box-sizing: border-box;
+	display:flex;
+	justify-content: space-between;
+	font-size:17px;
+	color:#666;
+}
+.smPop_contents_text p:nth-child(2){
+	padding:1vw 0vw;
+	box-sizing: border-box;
+	font-size:14px;
+	color:#666;
+}
+.smPop_contents_textEdit{
+	flex-shrink: 0;
+	width:6.8vw;
+	height:6.8vw;
+}
+.hide-smPop_footer{
+	width:95%;
+	flex-shrink: 0;
+	text-align: center;
+	margin:2.666666vw auto;
+	padding:4vw 4vw;
+	box-sizing: border-box;
+	background: linear-gradient(4.71239rad, rgb(223, 46, 46), rgb(245, 90, 55));
+	border-radius:6vw;
+	color:#fff;
+	font-size:18px;
+}

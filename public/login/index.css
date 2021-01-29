@@ -1,0 +1,99 @@
+.login-phone,.login-pwd{display:none;}
+.login-phone.show,.login-pwd.show{display:block;}
+.page-login{
+	height:100%;
+	background:url('img/bg.png');
+	background-size:cover;
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
+.page-login h1{
+	flex-shrink: 0;
+	padding-top:80px;
+	box-sizing:border-box;
+	font-weight: 500;
+	font-size:24px;
+	color:#666;
+}
+.login-phone,.login-pwd{
+	width:100%;
+	flex-grow: 1;
+	padding:30px 10px;
+}
+.login-phone input{
+	display:block;
+	margin:0px auto 20px;
+	width:70%;
+	padding:10px 10px;
+	font-size:16px;
+	border:none;
+	outline: none;
+	border-bottom:1px solid #EFEFEF;
+}
+.login-phone button:nth-child(3){
+	display:block;
+	border: none;
+	margin:10px auto 15px;
+	width: 70%;
+	color:#fff;
+	font-size:16px;
+	font-weight:600;
+	padding:15px 10px;
+	border-radius: 6vw;
+	box-shadow:0px 4px 2px #f1eadf;
+	background: linear-gradient(to right, #E4BB7E, #D1A96E );
+}
+.login-phone button:nth-child(4){
+	display:block;
+	border: none;
+	margin:10px auto;
+	width: 70%;
+	padding:15px 10px;
+	border-radius: 6vw;
+	font-size:16px;
+	font-weight:600;
+	color:#666;
+}
+.login-pwd input{
+	display:block;
+	margin:0px auto 20px;
+	width:70%;
+	padding:10px 10px;
+	font-size:16px;
+	border:none;
+	outline: none;
+	border-bottom:1px solid #EFEFEF;
+}
+.login-pwd button:nth-child(3){
+	display:block;
+	border: none;
+	margin:10px auto 15px;
+	width: 70%;
+	color:#fff;
+	font-size:16px;
+	font-weight:600;
+	padding:15px 10px;
+	border-radius: 6vw;
+	box-shadow:0px 4px 2px #f1eadf;
+	background: linear-gradient(to right, #E4BB7E, #D1A96E );
+}
+.login-pwd button:nth-child(4){
+	display:block;
+	border: none;
+	margin:10px auto;
+	width: 70%;
+	padding:15px 10px;
+	border-radius: 6vw;
+	font-size:16px;
+	font-weight:600;
+	color:#666;
+}
+/* 立即注册 */
+.register{
+	text-align:center;
+	width:100%;
+	flex-grow: 1;
+	padding:30px 0px;
+	color:#666;
+}

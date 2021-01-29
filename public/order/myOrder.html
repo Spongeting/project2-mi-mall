@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/public/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/public/fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="/public/layer_mobile/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="myOrder.css" />
+	</head>
+	<body>
+		<div class="page-myOrder">
+			<div class="page-header">
+				<i class="iconfont icon-back"></i>
+				<span>我的订单</span>
+				<i class="iconfont icon-find"></i>
+			</div>
+			<ul class="page-tab">
+				<li class="active">全部</li>
+				<li class="page-tab-pendingPay">待付款</li>
+				<li class="page-tab-payOut">待收货</li>
+				<!-- <li>退款订单</li>
+				<li>已收货</li> -->
+			</ul>
+			<div class="page-scroll hide-scroll">
+				<div class="page-container">
+					<ul class="container-list active">
+						<!-- js中渲染 -->
+					</ul>
+					<ul class="pending-pay">
+						<!-- js中渲染 -->
+					</ul>
+					<ul class="pending-goods">
+						<!-- js中渲染 -->
+					</ul>
+					<!-- <ul>退款订单</ul>
+					<ul>已收货</ul> -->
+				</div>
+			</div>
+		</div>
+		<script src="/public/js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/js/jQuery-extend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/layer_mobile/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="myOrder.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
